@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Santos - Front-End Developer </title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Bruno Santos <strong>Front-End Developer</strong></h1>
+        <p>Apresentando a vocês meu portifólio...</p>
+        
+    </header>
+    <article >
+    <section class="origin sobre">
+        <h2>Minha História</h2>
+        <p>Oi, Eu sou o Bruno, desde os meus 14 anos tenho um fascínio pelo mundo da tecnologia, desde então descobri que esse é um mundo muito, muito grande. Até aqui vi passei por várias partes deste vasto mundo. Vi conceitos de Cibersegurança, Redes de computadores e por fim :  Desenvolvimento de Sistemas, é área que eu decidi ingressar. De início eu não sabia nem por onde ia, começamos vendo lógica de programação com o portugol, foi bem divertido. Hoje sou um desenvolvedor full-stack mais focado em front-end, sou apaixonado por criar interfaces intuitivas e responsivas, utilizando recursos de UI/UX designer. </p>
+    </section>
+    <section class="origin projects">
+        <h3>Veja meus projetos</h3>
+        <!-- Slider main container -->
+        <div class="swiper origin">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide origin">
+                <h3>ON3+</h3>
+                <img src="logo-ong-white.svg" alt="Imagem com uma logo preta redonda com vários buracos representando a ong+">
+                <a href="https://ong-plus.vercel.app/home" alt="Site da ong-plus ">Visitar</a>
+            </div>
+            <div class="swiper-slide origin">
+                <h3>ON2+</h3>
+                <img src="logo-ong-white.svg" alt="Imagem com uma logo preta redonda com vários buracos representando a ong+">
+                <a href="https://ong-plus.vercel.app/home" alt="Site da ong-plus "></a>
+            </div>
+            <div class="swiper-slide origin">
+                <h3>O1G+</h3>
+                <img src="logo-ong-white.svg" alt="Imagem com uma logo preta redonda com vários buracos representando a ong+">
+                <a href="https://ong-plus.vercel.app/home" alt="Site da ong-plus "></a>
+            </div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section class="link origin">
+        <h3>Me siga nas redes sociais</h3>
+        <div>
+        <a href="https://www.linkedin.com/in/bruno-santos-634b9823b/" alt="Link para o linkedin de Bruno Santos">Linkedin</a>
+        <a href="https://github.com/Brunohsdev" alt="Link para o github de Bruno Santos">GitHub</a>
+        </div>
+    </section>
+    </article>
+    <footer>
+        <p>© 2025 Bruno Santos. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script >// core version + navigation, pagination modules:
+   
+    // init Swiper:
+    const swiper = new Swiper('.swiper', {
+    // configure Swiper to use modules
+    
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination:{
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation:{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+       
+    });</script>
+</body>
+</html>
